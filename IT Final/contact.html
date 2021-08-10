@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact us</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <link rel="stylesheet" href="form.css" />
+    <style type="text/css">
+      *
+      {
+        box-sizing:border-box;    
+      }
+      
+      #container
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      #container2
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      body
+      {
+        font-family:Calibri;
+        padding:10px;
+        background:  #110E0E;
+      }
+      
+      .header
+      {
+        padding:20px;
+        text-align:center;
+        background: white;
+      }
+      
+      .header h1
+      {
+        font-size:50px;
+      }
+      
+      .topnav
+      {
+        overflow:hidden;
+        background-color: white;
+        height:90px;
+        border:1px solid black;
+      }
+      
+      .topnav a
+      {
+        float:left;
+        display:block;
+        color: black;
+        text-align:center;
+        padding:30px 50px 50px 50px;
+        text-decoration:none;
+        line-height:30px;
+      }
+      
+      .topnav a:hover 
+      {
+        background-color:#ddd;
+        color: #6F6D0A;
+      }
+      
+      .leftcolumn
+      {
+        float:left;
+        width:100%;
+      }
+
+      .rightcolumn
+      {
+        float:right;
+        width:25%;
+        background-color: white;
+        padding-left:20px;
+        padding-top: 20px;
+        position: relative;
+        top: 20px;
+        height:1413px;
+        border:1px solid black;
+      }
+
+      .card
+      {
+        background-color: white;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+      }
+      
+      .card1
+      {
+        background-color:#F4E9E8;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .card2
+      {
+        background-color:#F4E9E8;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .row:after
+      {
+        content:"";
+        display:table;
+        clear:both;
+      }
+      
+      .footer
+      {
+        padding:20px;
+        text-align:center;
+        background: white;
+        margin-top:20px;
+        border:1px solid black;
+        height:350px;
+      }
+      
+      @media screen and (max-width:800px)
+      {
+        .leftcolumn, .rightcolumn
+          {
+            width:100%;
+            padding:0;
+          }
+      }
+      
+      @media screen and (max-width:400px)
+      {
+        .topnav a
+          {
+            float:none;
+            width:100%;
+          }
+      }
+
+      .logo
+      {
+        position:relative;
+        top: -20px;
+      }
+
+      iframe
+      {
+        position:relative;
+        left:-125px;
+      }  
+      
+      .h4
+      {
+        color: white;
+        position:relative;
+        left: -95px;
+      }  
+      
+      .h4_2
+      {
+        color:white;
+        position:relative;
+        top: -314px;
+        left: 410px;
+      }  
+      
+      h2,p,h5,h3,h4
+      {
+          color:black;
+      }
+
+      a
+      {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover
+      {
+        background-color:#ddd;
+        color: #6F6D0A;
+      }
+
+      ol li,ul li 
+      {
+        color: black; 
+      }
+      
+      .bottom_text
+      {
+        position:relative;
+        top: -310px;
+        right:-400px;
+      }
+
+      ul
+      {
+        padding-left: 10px;
+      }
+      
+      ul li
+      {
+        color:#04252c;
+        line-height: 35px;
+      }
+      
+      .foot1
+      {
+        display: block;
+        float: left;
+        padding-left:70px;
+        padding-right:70px;
+      }
+      
+      .innerfoot
+      {
+        padding-left:25px;
+      }
+      
+      .foot2
+      {
+        display: block;
+        float:left;
+        padding-left:40px;
+        padding-right:140px;
+        padding-top: 20px;
+      }
+      
+      .foot3
+      {
+        display: block;
+        style = float: right;
+        padding-right:70px;
+        padding-left: 70px;
+      }
+      
+      .form
+      {
+        width:300px;
+        padding:15px 40px 40px;
+        border:1px solid black;
+        border-radius: 5px;
+        background-color: white;
+        margin: 4% auto;
+      }
+      
+      .image
+      { 
+        float:right;
+        padding: 50px 0px 0px 200px;
+      }
+  
+      .contact-banner 
+      {
+        background: #110E0E;
+        color: white;
+        padding: 40px;
+      }
+
+      .invalid 
+      {
+        border: 1px solid red;
+      }
+
+      .contact-description 
+      {
+        margin-bottom: 40px;
+        color: white;
+      }
+
+      input 
+      {
+        padding: 10px;
+        border-radius: 5px;
+        width: 280px;
+        border:1px solid black;
+        font-size: 18px;
+        outline: none;
+        color: #333;
+      }
+
+      .form-control 
+      {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .error 
+      {
+        color: red;
+        font-size: 14px;
+        margin-top: 6px;
+      }
+
+      label 
+      {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: black ;
+      }
+
+      .hide 
+      {
+        opacity: 0;
+      }
+
+      textarea 
+      {
+        width: 560px;
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+        height: 200px;
+        font-size: 18px;
+      }
+
+      button 
+      {
+        color: black;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: none;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      button:hover 
+      {
+        background: #110E0E;
+        color: white;
+      }
+
+      form 
+      {
+        padding: 40px;
+      }
+    </style>
+	</head>
+  <body>
+    <div id="container">
+      <div class="topnav">
+        <img src="logo.jpg" height="130px" width="180px" class="logo" alt="Logo">
+        <a href="contact.html"  style="float:right;">Contact us</a>
+        <a href="feedback.html"  style="float:right;">Feedback</a>
+        <a href="about.html" style="float:right;">About Us</a>
+        <a href="gallery.html"  style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;">Home</a>
+      </div>
+
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card" style="height:1367px">
+            <div class="contact-banner">
+              <h1>Contact Us</h1>
+              <p class="contact-description">We really appriciate your feedbacks and love! Please fill in the form below and click submit</p>
+            </div>
+
+            <div class="image"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7065.721352898378!2d85.31826612524449!3d27.690700681268478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b0f6aafa13%3A0x778967dbd03da6e0!2sThapathali%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1628525750054!5m2!1sen!2snp" width="569" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+            <form name="contact-form">
+              <div class="form-control">
+                <label>Full Name:</label>
+                <input name="name" placeholder="First and Last Name"/>
+                <div class="error hide">Name is required</div>
+              </div>
+
+              <div class="form-control">
+                <label>Email:</label>
+                <input name="email"placeholder="e.g. email@example.com"/>
+                <div class="error hide">Email is invalid</div>
+              </div>
+
+              <div class="form-control">
+                <label>Phone:</label>
+                <input name="phone">
+                <div class="error hide">Phone is invalid</div>
+              </div>
+
+              <div class="form-control">
+                <label>Message:</label>
+                <textarea name="message"></textarea>
+                <div class="error hide">Message is required</div>
+              </div>
+
+              <button type="submit">SUBMIT FORM</button>
+            </form>
+
+            <script type="text/javascript">
+              const form = document.querySelector("form[name='contact-form']");
+              const nameInput = document.querySelector("input[name='name']");
+              const emailInput = document.querySelector("input[name='email']");
+              const phoneInput = document.querySelector("input[name='phone']");
+              const messageInput = document.querySelector("textarea[name='message']");
+
+              nameInput.isValid = () => !!nameInput.value;
+              emailInput.isValid = () => isValidEmail(emailInput.value);
+              phoneInput.isValid = () => isValidPhone(phoneInput.value);
+              messageInput.isValid = () => !!messageInput.value;
+
+              const inputFields = [nameInput, emailInput, phoneInput, messageInput];
+
+              const isValidEmail = (email) => {
+                const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+              };
+
+              const isValidPhone = (phone) => {
+                const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+                return re.test(String(phone).toLowerCase());
+              };
+
+              let shouldValidate = false;
+              let isFormValid = false;
+
+              const validateInputs = () => {
+                console.log("we are here");
+                if (!shouldValidate) return;
+
+                isFormValid = true;
+                inputFields.forEach((input) => {
+                  input.classList.remove("invalid");
+                  input.nextElementSibling.classList.add("hide");
+
+                  if (!input.isValid()) {
+                    input.classList.add("invalid");
+                    isFormValid = false;
+                    input.nextElementSibling.classList.remove("hide");
+                  }
+                });
+              };
+
+              form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                shouldValidate = true;
+                validateInputs();
+                if (isFormValid) {
+                  // TODO: DO AJAX REQUEST
+                }
+              });
+
+              inputFields.forEach((input) => input.addEventListener("input", validateInputs));
+                </script>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="foot1">
+            <h1>Follow us on:</h1>
+            <div class="innerfoot">
+              <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" width="30px" height="30px" alt="Instagram"></a><p style="color:#04252c;">ShoeLine136
+              </p>
+              <a href="https://www.facebook.com/" target="_blank"><img src="facebok.png" width="30px" height="30px" alt="Facebook"></a><p style="color:#04252c;">ShoeLine</p>
+              <a href="https://mail.google.com/" target="_blank"><img src="gmail.png" width="30px" height="30px" alt="Gmail"></a><br><a href="shoeline136@gmail.com" style="color:#04252c;">shoeline136@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="foot2">
+            <img src="logo.jpg" height="200px" width="300px" class="logo" style="border: 1px solid black;">
+            <h3 style="color:#04252c;"> Copyright © Shoeline.co. All Rights Reserved</h3>
+            <p style="color:#04252c; " >Address: Thapathali, Kathmandu</p>
+          </div>
+
+          <div class="foot3">
+            <h1>Site map</h1>
+            <ul type="none">
+              <li><a href="index.html">Home</li></a>
+              <li><a href="gallery.html">Gallery</li></a>
+              <li><a href="about.html">About Us</li></a>
+              <li><a href="feedback.html">Feedback</li></a>
+              <li><a href="home.html">Contact Us</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

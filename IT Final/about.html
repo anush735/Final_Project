@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hearth</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <style>
+      *
+      {
+        box-sizing:border-box;    
+      }
+      
+      #container
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      #container2
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      body
+      {
+        font-family:Calibri;
+        padding:10px;
+        background:  #584A7D;
+      }
+      
+      .header
+      {
+        padding:20px;
+        text-align:center;
+        background: #C7D3D4FF;
+      }
+      
+      .header h1
+      {
+        font-size:50px;
+      }
+      
+      .topnav
+      {
+        overflow:hidden;
+        background-color:#C7D3D4FF;
+        height:90px;
+        border:1px solid black;
+      }
+      
+      .topnav a
+      {
+        float:left;
+        display:block;
+        color: black;
+        text-align:center;
+        padding:30px 50px 50px 50px;
+        text-decoration:none;
+        line-height:30px;
+      }
+      
+      .topnav a:hover 
+      {
+        background-color:#ddd;
+        color: #6F6D0A;
+      }
+
+      .leftcolumn
+      {
+        float:left;
+        width:100%;
+      }
+      
+      .rightcolumn
+      {
+        float:right;
+        width:25%;
+        background-color:#C7D3D4FF;
+        padding-left:20px;
+        padding-top: 20px;
+        position: relative;
+        top: 20px;
+        height:1413px;
+        border:1px solid black;
+      }
+
+      .card
+      {
+        background-color:#C7D3D4FF;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+      }
+      
+      .card1
+      {
+        background-color:#ADEFD1FF;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .card2
+      {
+        background-color:#ADEFD1FF;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .row:after
+      {
+        content:"";
+        display:table;
+        clear:both;
+      }
+      
+      .footer
+      {
+        padding:20px;
+        text-align:center;
+        background:#C7D3D4FF;
+        margin-top:20px;
+        border:1px solid black;
+        height:350px;
+      }
+      
+      @media screen and (max-width:800px)
+      {
+        .leftcolumn, .rightcolumn
+          {
+            width:100%;
+            padding:0;
+          }
+      }
+      
+      @media screen and (max-width:400px)
+      {
+        .topnav a
+          {
+            float:none;
+            width:100%;
+          }
+      }
+
+      .logo
+      {
+        position:relative;
+        top: -20px;
+      }
+
+      iframe
+      {
+        position:relative;
+        left:-125px;
+      }  
+      
+      .h4
+      {
+        color: black;
+        position:relative;
+        left: -95px;
+      }  
+      
+      .h4_2
+      {
+        color:black;
+        position:relative;
+        top: -314px;
+        left: 410px;
+      }  
+      
+      h2,p,h5,h3,h4
+      {
+        color:black;
+      }
+      
+      a
+      {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover
+      {
+        background-color:#ddd;
+        color: #6F6D0A;
+      }
+
+      ol li,ul li 
+      {
+        color: black; 
+      }
+      
+      .bottom_text
+      {
+        position:relative;
+        top: -310px;
+        right:-400px;
+      }
+
+      ul
+      {
+        padding-left: 10px;
+      }
+
+      ul li
+      {
+        line-height: 35px;
+      }
+      
+      .foot1
+      {
+        display: block;
+        float: left;
+        padding-left:70px;
+        padding-right:70px;
+      }
+      
+      .innerfoot
+      {
+        padding-left:25px;
+      }
+      
+      .foot2
+      {
+        display: block;
+        float:left;
+        padding-left:40px;
+        padding-right:140px;
+        padding-top: 20px;
+      }
+      
+      .foot3
+      {
+        display: block;
+        style = float: right;
+        padding-right:70px;
+        padding-left: 70px;
+      }
+
+      .team
+      {
+        padding:20px 20px 0px 20px;
+      }
+
+      .text
+      {
+        font-size: 20px;
+       padding-left: 25px;
+       padding-bottom: 30px;
+       padding-top: 0px;
+       font-family: helvetica;
+       line-height: 37px;
+       text-align: left ;
+       background-color: #C7D3D4FF;
+      }
+
+      .title
+      {
+        position:relative;
+        right:90px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="topnav">
+        <img src="logo.jpg" height="130px" width="180px" class="logo">
+        <a href="contact.html"  style="float:right;">Contact us</a>
+        <a href="feedback.html"  style="float:right;">Feedback</a>
+        <a href="about.html" style="float:right;">About Us</a>
+        <a href="gallery.html"  style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;">Home</a>
+      </div>
+
+
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <div style="text-align: center;">
+             <h1>About Us</h1>
+            </div>
+
+            <div class="text">
+              <div class="team"> 
+                <img src="team.jpeg" height="300px" width="450px" align="right" alt="Team">
+              </div>
+              <p>We started our company in 2001 as a small store. 20 years later we are a big family of 2000+ members. We realize that style and prosperity begin with the correct shoes. We likewise understand that effectively finding the size and style to meet your requirements is vital to your web based shopping knowledge. 
+              <br>This is the reason 'ShoeLine' is your place for athletic and easygoing shoes for the entire family from many name brands. </p>
+              <p>Our staffs are friendly and determined to provide you the best service. Everyone at 'ShoeLine' is devoted to satisfying your shopping wants with no inconvenience, we ensure that you encounter smooth web based requesting background. Our intriguing accumulation of elegantly insightful footwear is accessible at astonishing costs that will really shock you. We listen to our customers, take feedbacks. We like to grow with them, provide the services they need.<br>
+              Shop with us today, Become shoe-holic with 'ShoeLine'</p>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="foot1">
+              <h1>Follow us on:</h1>
+              <div class="innerfoot">
+                <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" width="30px" height="30px" alt="Instagram"></a><p style="color:#04252c;">ShoeLine136</p>
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebok.png" width="30px" height="30px" alt="Facebook"></a><p style="color:#04252c;">ShoeLine</p>
+                <a href="https://mail.google.com/" target="_blank"><img src="gmail.png" width="30px" height="30px" alt="Gmail"></a><br><a href="shoeline136@gmail.com" style="color:#04252c;">shoeline136@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="foot2">
+              <img src="logo.jpg" height="200px" width="300px" class="logo" style="border: 1px solid black;">
+              <h3 style="color:#04252c;"> Copyright © Shoeline.co. All Rights Reserved</h3>
+              <p style="color:#04252c; " >Address: Thapathali, Kathmandu</p>
+            </div>
+
+            <div class="foot3">
+              <h1>Site map</h1>
+              <ul type="none">
+                <li><a href="index.html">Home</li></a>
+                <li><a href="gallery.html">Gallery</li></a>
+                <li><a href="about.html">About Us</li></a>
+                <li><a href="feedback.html">Feedback</li></a>
+                <li><a href="home.html">Contact Us</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hearth</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <style>
+      *
+      {
+        box-sizing:border-box;    
+      }
+      
+      #container
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      #container2
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      body
+      {
+        font-family:Calibri;
+        padding:10px;
+        background:  #1e3d59;
+      }
+      
+      .header
+      {
+        padding:20px;
+        text-align:center;
+        background: #f5f0e1;
+      }
+      
+      .header h1
+      {
+        font-size:50px;
+      }
+      
+      .topnav
+      {
+        overflow:hidden;
+        background-color:#f5f0e1;
+        height:90px;
+        border:1px solid black;
+      }
+      
+      .topnav a
+      {
+        float:left;
+        display:block;
+        color: black;
+        text-align:center;
+        padding:30px 50px 50px 50px;
+        text-decoration:none;
+        line-height:30px;
+      }
+      
+      .topnav a:hover 
+      {
+        background-color:#ddd;
+        color: #6F6D0A;
+      }
+      
+      .leftcolumn
+      {
+        float:left;
+        width:100%;
+      }
+        
+      
+      .rightcolumn
+      {
+        float:right;
+        width:25%;
+        background-color:#f5f0e1;
+        padding-left:20px;
+        padding-top: 20px;
+        position: relative;
+        top: 20px;
+        height:1413px;
+        border:1px solid black;
+      }
+  
+      .card
+      {
+        background-color:#f5f0e1;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        height: 1300px;
+      }
+      
+      .card1
+      {
+        background-color:#f5f0e1;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .card2
+      {
+        background-color:#f5f0e1;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .row:after
+      {
+        content:"";
+        display:table;
+        clear:both;
+      }
+      
+      .footer
+      {
+        padding:20px;
+        text-align:center;
+        background:#f5f0e1;
+        margin-top:20px;
+        border:1px solid black;
+        height:350px;
+      }
+      
+      @media screen and (max-width:800px)
+      {
+        .leftcolumn, .rightcolumn
+          {
+            width:100%;
+            padding:0;
+          }
+      }
+      
+      @media screen and (max-width:400px)
+      {
+        .topnav a
+          {
+            float:none;
+            width:100%;
+          }
+      }
+
+      .logo
+      {
+        position:relative;
+        top: -20px;
+      }
+
+      iframe
+      {
+        position:relative;
+        left:-125px;
+      }  
+      
+      .h4
+      {
+        color: black;
+        position:relative;
+        left: -95px;
+      }  
+      
+      .h4_2
+      {
+        color:black;
+        position:relative;
+        top: -314px;
+        left: 410px;
+      }  
+      
+      h2,p,h5,h3,h4
+      {
+        color:black;
+      }
+      
+      a
+      {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover
+      {
+        background-color:#ddd;
+        color: #6F6D0A;
+      }
+
+      ol li,ul li 
+      {
+        color: black; 
+      }
+      
+      .bottom_text
+      {
+        position:relative;
+        top: -310px;
+        right:-400px;
+      }
+
+
+      ul
+      {
+        padding-left: 10px;
+      }
+  
+      ul li
+      {
+        color:#04252c;
+        line-height: 35px;
+      }
+      
+      .foot1
+      {
+        display: block;
+        float: left;
+        padding-left:70px;
+        padding-right:70px;
+      }
+      
+      .innerfoot
+      {
+        padding-left:25px;
+      }
+      
+      .foot2
+      {
+        display: block;
+        float:left;
+        padding-left:40px;
+        padding-right:140px;
+        padding-top: 20px;
+      }
+      
+      .foot3
+      {
+        display: block;
+        style = float: right;
+        padding-right:70px;
+        padding-left: 70px;
+      }
+
+      
+      .image
+      { 
+        padding-left: 50px;
+        font-color:#04252c;
+        font-family: helvetica;
+      }
+
+    .box
+   {
+     display:block; 
+      height:1155px;
+      width: 1140px;
+      background-color:#FBF7E6;
+      border:1px solid #04252c;
+      position: absolute;
+      top: 130px; 
+      left:105px;
+   }   
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="topnav">
+        <img src="logo.jpg" height="130px" width="180px" class="logo" alt="Logo">
+        <a href="contact.html"  style="float:right;">Contact us</a>
+        <a href="feedback.html"  style="float:right;">Feedback</a>
+        <a href="about.html" style="float:right;">About Us</a>
+        <a href="gallery.html"  style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;"></i>Home</a>
+      </div>
+    </div>
+
+    <div id="container2">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="image1.jpeg" style="width:100%" >
+          <div class="text2">Variety Of Well Known Brands</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="image2.jpeg" style="width:100%">
+          <div class="text2">Wide Range Of Products</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="image3.jpeg" style="width:100%" height="685px">
+          <div class="text2">Something For Your Kids</div>
+        </div>
+
+        <script type="text/javascript">
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() 
+          {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) 
+              {
+                slides[i].style.display = "none";
+              }
+            slideIndex++;
+            if (slideIndex > slides.length) 
+              {
+                slideIndex = 1;
+              }
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000);
+          }
+        </script>
+      </div><br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+           <div class="image" style="height:1371px">
+              <h1 align="center" style="color:#04252c;"> Gallery</h1>
+              <a href="gal1.jpeg" target="_blank"><img src="gal1.jpeg" height="280px" width="520px" alt="International Brands"></a>
+              <a href="gal2.jpeg" target="_blank"><img src="gal2.jpeg" height="280px" width="520px" alt="Local Brands"></a>
+              <p align="center">Variety Of International As Well As Local Brands</p>
+              <a href="gal3.jpeg" target="_blank"><img src="gal3.jpeg" height="280px" width="520px" alt="Women"></a>
+              <a href="gal4.jpeg" target="_blank"><img src="gal4.jpeg" height="280px" width="520px" alt="Kids"></a>
+              <p align="center">Wide Range Of Catagories(Man, Women, Kids...), Size, Colors And Many More</p>
+              <a href="gal5.jpeg" target="_blank"><img src="gal5.jpeg" height="280px" width="520px" alt="Custom Shoe"></a>
+              <a href="gal6.jpeg" target="_blank"><img src="gal6.jpeg" height="280px" width="520px" alt="Shoe Making"></a>
+              <p align="center">Design Your Own High Quality Shoe, With Our Custom Shoe Servies</p>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="foot1">
+              <h1>Follow us on:</h1>
+              <div class="innerfoot">
+                <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" width="30px" height="30px" alt="Instagram"></a><p style="color:#04252c;">ShoeLine136</p>
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebok.png" width="30px" height="30px" alt="Facebook"></a><p style="color:#04252c;">ShoeLine</p>
+                <a href="https://mail.google.com/" target="_blank"><img src="gmail.png" width="30px" height="30px" alt="Gmail"></a><br><a href="shoeline136@gmail.com" style="color:#04252c;">shoeline136@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="foot2">
+              <img src="logo.jpg" height="200px" width="300px" class="logo" style="border: 1px solid black;" alt="Logo">
+              <h3 style="color:#04252c;"> Copyright © Shoeline.co. All Rights Reserved</h3>
+              <p style="color:#04252c; " >Address: Thapathali, Kathmandu</p>
+            </div>
+
+            <div class="foot3">
+              <h1>Site map</h1>
+              <ul type="none">
+                <li><a href="index.html">Home</li></a>
+                <li><a href="gallery.html">Gallery</li></a>
+                <li><a href="about.html">About Us</li></a>
+                <li><a href="feedback.html">Feedback</li></a>
+                <li><a href="home.html">Contact Us</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

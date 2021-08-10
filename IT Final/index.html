@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hearth</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <style>
+      *
+      {
+        box-sizing:border-box;    
+      }
+      
+      #container
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      #container2
+      {
+        width:1140px;
+        min-height:800px;
+        margin:auto auto;
+      }
+      
+      body
+      {
+        font-family:Calibri;
+        padding:10px;
+        background:  #9B8B89;
+      }
+      
+      .header
+      {
+        padding:20px;
+        text-align:center;
+        background: F4E9E8;
+      }
+      
+      .header h1
+      {
+        font-size:50px;
+      }
+      
+      .topnav
+      {
+        overflow:hidden;
+        background-color:#F4E9E8;
+        height:90px;
+        border:1px solid black;
+      }
+      
+      .topnav a
+      {
+        float:left;
+        display:block;
+        color: black;
+        text-align:center;
+        padding:30px 50px 50px 50px;
+        text-decoration:none;
+        line-height:30px;
+      }
+        
+      .topnav a:hover 
+      {
+        background-color:#ddd;
+        color: #6F6D0A;
+      }
+      
+      .leftcolumn
+      {
+        float:left;
+        width:75%;
+      }
+      
+      
+      .rightcolumn
+      {
+        float:right;
+        width:25%;
+        background-color:#F4E9E8;
+        padding-left:20px;
+        padding-top: 20px;
+        position: relative;
+        top: 20px;
+        height:1413px;
+        border:1px solid black;
+        }
+  
+      .card
+      {
+        background-color:#F4E9E8;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+      }
+      
+      .card1
+      {
+        background-color:#F4E9E8;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .card2
+      {
+        background-color:#F4E9E8;
+        padding:20px;
+        margin-top:20px;
+        border:1px solid black;
+        position:relative;
+        left:-10px;
+      }
+
+      .row:after
+      {
+        content:"";
+        display:table;
+        clear:both;
+      }
+      
+      .footer
+      {
+        padding:20px;
+        text-align:center;
+        background:#F4E9E8;
+        margin-top:20px;
+        border:1px solid black;
+        height:350px;
+      }
+      
+      @media screen and (max-width:800px)
+      {
+        .leftcolumn, .rightcolumn
+          {
+            width:100%;
+            padding:0;
+          }
+      }
+      
+      @media screen and (max-width:400px)
+      {
+        .topnav a
+          {
+            float:none;
+            width:100%;
+          }
+      }
+
+      .logo
+      {
+        position:relative;
+        top: -20px;
+      }
+
+      iframe
+      {
+        position:relative;
+        left:-125px;
+      }  
+      
+      .h4
+      {
+        color: black;
+        position:relative;
+        left: -95px;
+      }  
+      
+      .h4_2
+      {
+        color:black;
+        position:relative;
+        top: -314px;
+        left: 410px;
+      }  
+      
+      h2,p,h5,h3,h4
+      {
+        color:black;
+      }
+      
+      a
+      {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover
+      {
+       background-color:#ddd;
+       color: #6F6D0A;
+      }
+
+      ol li,ul li 
+      {
+        color: black; 
+      }
+      
+      .bottom_text
+      {
+        position:relative;
+        top: -310px;
+        right:-400px;
+      }
+      
+      ul
+      {
+        padding-left: 10px;
+      }
+      
+      ul li
+      {
+        color:#04252c;
+        line-height: 35px;
+      }
+      
+      .foot1
+      {
+        display: block;
+        float: left;
+        padding-left:70px;
+        padding-right:70px;
+      }
+      
+      .innerfoot
+      {
+        padding-left:25px;
+      }
+      
+      .foot2
+      {
+        display: block;
+        float:left;
+        padding-left:40px;
+        padding-right:140px;
+        padding-top: 20px;
+      }
+      
+      .foot3
+      {
+        display: block;
+        style = float: right;
+        padding-right:70px;
+        padding-left: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="topnav">
+        <img src="logo.jpg" height="130px" width="180px" class="logo" alt="Logo">
+        <a href="contact.html"  style="float:right;">Contact us</a>
+        <a href="feedback.html"  style="float:right;">Feedback</a>
+        <a href="about.html" style="float:right;">About Us</a>
+        <a href="gallery.html"  style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;"></i>Home</a>
+      </div>
+    </div>
+
+    <div id="container2">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="image1.jpeg" style="width:100%" alt="Image1">
+          <div class="text">Variety Of Well Known Brands</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="image2.jpeg" style="width:100%" alt="Image2">
+          <div class="text">Wide Range Of Products</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="image3.jpeg" style="width:100%" height="685px" alt="Image3">
+          <div class="text">Something For Your Kids</div>
+      </div>
+     
+      <script type="text/javascript">
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() 
+        {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) 
+            {
+              slides[i].style.display = "none";
+            }
+          slideIndex++;
+          if (slideIndex > slides.length) 
+            {
+              slideIndex = 1;
+            }
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000);
+        }
+      </script>
+    </div><br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>New Arrival</h2>
+          <img src="shoe1.jpeg" height="300px" width="770px" alt="New Arrival">
+          <h4>Olympic Shoes.<br>Rs. $1170</h4>
+          <p>Our new product specially designed for the mats used in Tokyo Olympics 2020,<br>
+          Gear up the games.<br><br> From shoes to sporty fashion to adhesive patches that shave off fractions from an athlete’s running time, Our vibrant collection for the Summer Olympics is an inspired range of products. It is specially designed to provide comfort, good ventilation, super-easy movement all of it with an eye-catching design.</p>
+        </div>
+
+        <div class="card">
+          <h2>Become a VIP member now</h2>
+          <img src="deal.png" height="500px" width="690px" alt="Offers">
+          <h3>Lots of exciting offers and more</h3>
+          <p> Point with every purchase <br>Free Shipping<br> $5 Off For Your Birthday</p>
+          <p><b>Enroll Today!!!</b></p>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div classs="card">
+          <h2>Shoes Line</h2>
+          <a href="index.html" target="_blank"><img src="logo.jpg" height="150px" width="250px" style="border: 1px solid black;" alt="Logo"></a><br><br>
+        </div>
+        
+        <div class="card1">
+          <h2>Donate Shoes:</h2>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="log1.png" height="75px" width="95px"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Give Shoes</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="log2.png" height="73px" width="95px"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save The Planet</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="log3.png" height="75px" width="95px"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get A Reward</p>
+          <div class="fakeimg"><p>To Donate Click The Link Below </p></div> 
+          <p><a href="http://newwindow.html" TARGET="_blank"> Donate here</a></p>
+        </div>
+
+         <div class="card2">
+          <h2>Special Announcment</h2>
+          <h4>Custom Shoes</h4>
+          <p>We are delighted to annouce that we are finally ready to make custom shoes. <b>Your design our shoes.</b> We are only accepting limitted orders for now
+            intrested people can send email in the address given below. Further details will be provided via same link <br> <b>Hurry Up! </b></p>
+          <p><a href="customafshoe@gmail.com">customafshoe@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="foot1">
+        <h1>Follow us on:</h1>
+        <div class="innerfoot">
+          <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" width="30px" height="30px" alt="Instagram"></a><p style="color:#04252c;">ShoeLine136</p>
+          <a href="https://www.facebook.com/" target="_blank"><img src="facebok.png" width="30px" height="30px" alt="Facebook"></a><p style="color:#04252c;">ShoeLine</p>
+          <a href="https://mail.google.com/" target="_blank"><img src="gmail.png" width="30px" height="30px" alt="Gmail"></a><br><a href="shoeline136@gmail.com" style="color:#04252c;">shoeline136@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="foot2">
+        <img src="logo.jpg" height="200px" width="300px" class="logo" style="border: 1px solid black;">
+        <h3 style="color:#04252c;"> Copyright © Shoeline.co. All Rights Reserved</h3>
+        <p style="color:#04252c; " >Address: Thapathali, Kathmandu</p>
+      </div>
+
+      <div class="foot3">
+        <h1>Site map</h1>
+        <ul type="none">
+          <li><a href="index.html">Home</li></a>
+          <li><a href="gallery.html">Gallery</li></a>
+          <li><a href="about.html">About Us</li></a>
+          <li><a href="feedback.html">Feedback</li></a>
+          <li><a href="home.html">Contact Us</li></a>
+        </ul>
+      </div>
+    </div>
+ </body>
+</html>

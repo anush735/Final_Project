@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Reviews</title>
+	</head>
+	<link rel="stylesheet" href="ImageSlider.css">
+	<style type="text/css">
+		*
+    {
+      box-sizing:border-box;    
+    }
+    #container
+    {
+      width:1140px;
+      min-height:800px;
+      margin:auto auto;
+    }
+    #container2
+    {
+      width:1140px;
+      min-height:800px;
+      margin:auto auto;
+    }
+    body
+    {
+      font-family:Calibri;
+      padding:10px;
+      background:  #2E6646;
+    }
+    .header
+    {
+      padding:20px;
+      text-align:center;
+      background: CCEFCB;
+    }
+    .header h1
+    {
+      font-size:50px;
+    }
+    .topnav
+    {
+      overflow:hidden;
+      background-color:#CCEFCB;
+      height:90px;
+      border:1px solid black;
+    }
+    .topnav a
+    {
+      float:left;
+      display:block;
+      color: black;
+      text-align:center;
+      padding:30px 50px 50px 50px;
+      text-decoration:none;
+      line-height:30px;
+    }
+    .topnav a:hover 
+    {
+      background-color:#ddd;
+      color: #6F6D0A;
+    }
+    .leftcolumn
+    {
+      float:left;
+      width:75%;
+    }
+
+    .rightcolumn
+    {
+      float:right;
+      width:25%;
+      background-color:#CCEFCB;
+      padding-left:20px;
+      padding-top: 20px;
+      position: relative;
+      top: 20px;
+      height:1413px;
+      border:1px solid black;
+    }
+
+    .card
+    {
+      background-color:#CCEFCB;
+      padding:20px;
+      margin-top:20px;
+      border:1px solid black;
+    }
+    
+    .card1
+    {
+      background-color:#F4E9E8;
+      padding:20px;
+      margin-top:20px;
+      border:1px solid black;
+      position:relative;
+      left:-10px;
+    }
+
+    .card2
+    {
+      background-color:#F4E9E8;
+      padding:20px;
+      margin-top:20px;
+      border:1px solid black;
+      position:relative;
+      left:-10px;
+    }
+
+    .row:after
+    {
+      content:"";
+      display:table;
+      clear:both;
+    }
+    
+    .footer
+    {
+      padding:20px;
+      text-align:center;
+      background:#CCEFCB;
+      margin-top:20px;
+      border:1px solid black;
+      height:350px;
+    }
+    
+    @media screen and (max-width:800px)
+    {
+      .leftcolumn, .rightcolumn
+        {
+          width:100%;
+          padding:0;
+        }
+    }
+    
+    @media screen and (max-width:400px)
+    {
+      .topnav a
+        {
+          float:none;
+          width:100%;
+        }
+    }
+
+    .logo
+    {
+      position:relative;
+      top: -20px;
+    }
+
+    iframe
+    {
+      position:relative;
+      left:-125px;
+    }  
+    
+    .h4
+    {
+      color: black;
+      position:relative;
+      left: -95px;
+    }  
+    
+    .h4_2
+    {
+      color:black;
+      position:relative;
+      top: -314px;
+      left: 410px;
+    }  
+    
+    h2,p,h5,h3,h4
+    {
+      color:black;
+    }
+     
+    a
+    {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover
+    {
+      background-color:#ddd;
+      color: #6F6D0A;
+    }
+
+    ol li,ul li 
+    {
+      color: black; 
+    }
+    
+    .bottom_text
+    {
+       position:relative;
+      top: -310px;
+      right:-400px;
+    }
+
+    ul
+    {
+      padding-left: 10px;
+    }
+    
+    ul li
+    {
+      line-height: 35px;
+    }
+    
+    .foot1
+    {
+      display: block;
+      float: left;
+      padding-left:70px;
+      padding-right:70px;
+    }
+    
+    .innerfoot
+    {
+      padding-left:25px;
+    }
+    
+    .foot2
+    {
+      display: block;
+      float:left;
+      padding-left:40px;
+      padding-right:140px;
+      padding-top: 20px;
+    }
+    
+    .foot3
+    {
+      display: block;
+      style = float: right;
+      padding-right:70px;
+      padding-left: 70px;
+    }
+    
+    .review_1
+    {
+      display:block;
+      float:left;
+      background-color:#CCEFCB;
+      border:1px solid #228B22;
+      width:555px;
+      height:400px;
+      margin-right:30px;
+      margin-top:30px;
+    }
+    
+    .review_2
+    {
+      display:block;
+      float:left;
+      width:555px;
+      height:400px;
+      background-color:#CCEFCB;
+      border:1px solid #228B22;
+      margin-top:30px;
+    }
+    
+    .review_3
+    {
+      display:block;
+      float:left;
+      background-color:#CCEFCB;
+      border:1px solid #228B22;
+      width:555px;
+      height:400px;
+      margin-right:30px;
+      margin-top:30px;
+    }
+    
+    .review_4
+    {
+      display:block;
+      float:left;
+      background-color:#CCEFCB;
+      border:1px solid #228B22;
+      margin-top:30px;
+      width:555px;
+      height:400px;
+    }
+
+    .review_5
+    {
+      display:block;
+      float:left;
+      background-color:#CCEFCB;
+      border:1px solid #228B22;
+      margin-top:30px;
+      margin-right: 30px;
+      width:555px;
+      height:400px;
+    }
+
+    .review_6
+    {
+      display:block;
+      float:left;
+      background-color:#CCEFCB;
+      border:1px solid #228B22;
+      margin-top:30px;
+      width:555px;
+      height:400px;
+    }
+
+    .innerImg
+    {
+      margin: 20px;
+      border:1px solid #228B22;
+    }
+    
+    .pass_text
+    {
+      position:relative;
+      top:-140px;
+      right:-160px;
+    }
+    
+    .pass_text_2
+    {
+      position:relative;
+      top: -80px;
+      padding:0px 10px 0px 20px;
+    }
+    
+    h2
+    {
+      color: #2E6646;
+      text-align:center;
+      background-color:#CCEFCB;
+      border:1px solid #228B22;
+      font-size: 35px;
+    }
+	</style>
+  <body>
+		<div id="container">
+      <div class="topnav">
+        <img src="logo.jpg" height="130px" width="180px" class="logo">
+        <a href="contact.html"  style="float:right;">Contact us</a>
+        <a href="reviews.html"  style="float:right;">Feedback</a>
+        <a href="about.html" style="float:right;">About Us</a>
+        <a href="gallery.html"  style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;">Home</a>
+      </div>
+
+      <div class="row">
+        <h2>Customer's Feedback </h2>
+        <div class="review_1">
+          <img src="pp1.jpg" height="130px" width="125px" class="innerImg" alt="Customer">
+          <h3 class="pass_text">Abhijit Laghari</h3>
+          <p class="pass_text">Age: 27, 2019</p>
+          <p class="pass_text_2"><br>Nice service really loved it. As a business man I need to wear my shoes for more than 12 hours. The shoes I bought from here was really comfortable. I have not faced any problems like leg pain yet. And there is no compromise in the area of fashion. One can wear it in meeting as well as for outgoing I have fully satisfied with my product. It was my pleasure to shop from ShoeLine. Will definetly shop agian and recommend to others.</p>
+        </div>
+
+        <div class="review_2">
+          <img src="pp2.jpeg" height="130px" width="125px" class="innerImg" alt="Customer">
+          <h3 class="pass_text">Cyra Belhocine</h3>
+          <p class="pass_text">Age: 35, 2021</p>
+          <p class="pass_text_2"><br>I bought 4 pairs of shoes for myself and 2 pairs for my kids. I have really happy with the availability of wide range of colours and sizes. The products were well recieved and genuine. I also love the budget friendly prices this site provides ang the offers. I can compare with various brands before buying, choose the one I like most. This site really makes your shopping effortless. Really loved it. Keep it up. </p>
+        </div>
+
+        <div class="review_3">
+          <img src="pp3.jpg" height="130px" width="125px" class="innerImg" alt="Customer">
+          <h3 class="pass_text">Arren Cho</h3>
+          <p class="pass_text">Age: 23, 2021</p>
+          <p class="pass_text_2"><br>I really like shopping from this store. The services you provide are awesome. It really like the option to donate the shoes. It will really help lots of people and the fact that one who donates will get a gift in return is just unbelivabely great. I encourage everyone to donate your old shoes and help peoples. Keep doing this great work. It's also really good to talk with your customer care staffs they are very freindly and understanding.</p>
+        </div>
+
+        <div class="review_4">
+          <img src="pp4.jpeg" height="130px" width="125px" class="innerImg" alt="Customer">
+          <h3 class="pass_text">Harper Jones</h3>
+          <p class="pass_text">Age: 18, 2018</p>
+          <p class="pass_text_2"><br>I have brought shoes of same brand from other store but it is not as same as the ones from here and there is difference in price too. After I found this store I have never searched for other store. As a regular customer I could like to suggest you to take request from your customer. i.e. Make custom shoes. The customers will give their design, colors, size etc and you guys will make the product accordingly. I hope this request will be considered. It will be fantastic. Thank You!!</p>
+        </div>
+
+        <div class="review_5">
+          <img src="pp5.jpg" height="130px" width="125px" class="innerImg" alt="Customer">
+          <h3 class="pass_text">Charlie Brown</h3>
+          <p class="pass_text">Age: 61, 2019</p>
+          <p class="pass_text_2"><br>Overall the services are good. I am a VIP member of this store and the offers it provides are great but I think the monthly subscription is high. I would suggest you to consider reducing it and making it a bit more affortable.</p>
+        </div>
+          
+        <div class="review_6">
+          <img src="pp6.jpg" height="130px" width="125px" class="innerImg" alt="Customer">
+          <h3 class="pass_text">Alex Miller</h3>
+          <p class="pass_text">Age: 21, 2020</p>
+          <p class="pass_text_2"><br>I had this issue of tearing my shoes within a month. I am an athlete by profession and my shoes go through lots of things. I hated when my shoes tear apart. I felt like I didnt take care of them properly. But after I switched to this store the problems has been really rare. So I just want to thank you guys for selling best genuine products. I am really grateful</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="foot1">
+          <h1>Follow us on:</h1>
+          <div class="innerfoot">
+            <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" width="30px" height="30px" alt="Instagram"></a><p style="color:#04252c;">ShoeLine136</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebok.png" width="30px" height="30px" alt="Facebook"></a><p style="color:#04252c;">ShoeLine</p>
+            <a href="https://mail.google.com/" target="_blank"><img src="gmail.png" width="30px" height="30px" alt="Gmail"></a><br><a href="shoeline136@gmail.com" style="color:#04252c;">shoeline136@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="foot2">
+          <img src="logo.jpg" height="200px" width="300px" class="logo" style="border: 1px solid black;">
+          <h3 style="color:#04252c;"> Copyright © Shoeline.co. All Rights Reserved</h3>
+          <p style="color:#04252c; " >Address: Thapathali, Kathmandu</p>
+        </div>
+        
+        <div class="foot3">
+          <h1>Site map</h1>
+          <ul type="none">
+            <li><a href="index.html">Home</li></a>
+            <li><a href="gallery.html">Gallery</li></a>
+            <li><a href="about.html">About Us</li></a>
+            <li><a href="feeedback.html">Feedback</li></a>
+            <li><a href="home.html">Contact Us</li></a>
+          </ul>
+        </div>
+      </div>
+    </div> 
+	</body>
+</html>
